@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kiran Studio — Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<main id="app">
+  <section class="login-scene" id="loginScene">
+    <div class="lamp-wrap">
+      <div class="beam"></div>
+      <div class="lamp">
+        <div class="shade"></div><div class="bulb"></div>
+        <div class="stem"></div><div class="base"></div>
+      </div>
+      <div id="particles"></div>
+    </div>
+
+    <div class="card">
+      <div class="brand">KIRAN STUDIO</div>
+      <h1>Welcome Back</h1>
+      <p>Sign in and enter your personal space.</p>
+      <form id="login">
+        <label>Username<input id="username" placeholder="Kiran" required></label>
+        <label>Email<input id="email" type="email" placeholder="you@example.com" required></label>
+        <label>Password<input id="password" type="password" minlength="4" placeholder="••••••••" required></label>
+        <button class="primary">Sign In</button>
+      </form>
+      <div class="or"><span>OR CONTINUE WITH</span></div>
+      <div class="social-row">
+        <button class="social" data-name="Google">Google</button>
+        <button class="social" data-name="GitHub">GitHub</button>
+      </div>
+      <small>Demo front-end login. Connect Supabase Auth for production.</small>
+    </div>
+  </section>
+
+  <section class="profile hidden" id="profile">
+    <div class="top"><button id="logout">← Log out</button><span><i></i> ONLINE</span></div>
+    <div class="hero">
+      <div class="avatar">KJ</div>
+      <div>
+        <div class="brand">DEVELOPER PROFILE</div>
+        <h2 id="name">Kiran Jadhav</h2>
+        <div class="role">Developer · Creator</div>
+        <p>Building premium websites, AI projects and interactive digital experiences.</p>
+        <a href="https://www.instagram.com/kiiiiiruuuuuu/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div><b>NAME</b><strong>Kiran Jadhav</strong></div>
+      <div><b>ROLE</b><strong>Developer</strong></div>
+      <div><b>STUDIO</b><strong>Kiran Studio</strong></div>
+      <div><b>STATUS</b><strong>Available</strong></div>
+    </div>
+  </section>
+</main>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
